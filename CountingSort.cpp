@@ -37,7 +37,7 @@ void CountingSort(int a[], int n, int b[], int k)
 	{
 		c[i] += c[i - 1];
 	}
-	for (i = 0; i < n; i++)
+	for (i = n - 1; i >= 0; i--)
 	{
 		b[c[a[i]] - 1] = a[i];
 		c[a[i]]--;
